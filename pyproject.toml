@@ -1,0 +1,19 @@
+[project]
+name = "jobhunt-mcp"
+version = "0.1.0"
+description = "A tool to ease your jobhunt"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=2.3.0",
+    "pypdf>=6.20.1",
+    "python-docx>=1.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
